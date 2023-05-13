@@ -1,0 +1,141 @@
+ .grid-container {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+.item1 { 
+    grid-area: header;
+    display: flex;
+    justify-content: left;
+    }
+.item2 { 
+    grid-area: menu; 
+    }
+.item3 { 
+    grid-area: main; 
+    }
+.item4 { 
+    grid-area: right; 
+}
+.item5 { 
+    grid-area: left; 
+
+}
+.item6 {
+    grid-area: footer;
+}
+.item3, .item4, .item5 {
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 60%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: rgb(180, 71, 201);
+  font-size: 20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 950px;
+}
+
+li a:hover:not(.active) {
+  background-color: #fae29a;
+} 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main left left right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.grid-container > div {
+  background-color: rgb(6, 10, 10);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.inter-title{
+  padding-top: 8%;
+  padding-left: 40%;
+  padding-bottom: 2%;
+}
+.flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 280px;
+    perspective: 1000px;
+    padding: 1px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(237, 19, 226, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+   
+  }
+  
+  .flip-card-back {
+    background-color: #b617d2;
+    color: black;
+    transform: rotateY(180deg);
+    padding:.5%;
+  }
+  button {
+    background-color: rgb(24, 145, 145);
+    margin: 2em;
+  }
+  div#right-card {
+    justify-content: left;
+  }
+  div#left-card {
+    justify-content: right;
+}

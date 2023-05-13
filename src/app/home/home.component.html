@@ -1,0 +1,82 @@
+<div class="grid-container">
+    <div class="item1" id="header">
+            <div class="navbar">
+                <ul>
+                  <img src=".\assets\INTERLOGO.png" class="logo" alt="Interlogo">
+                  <li><a class="link" href="/about"><strong> About</strong></a></li>
+                  <li><a class="link" href="/locations"><strong>Locations</strong></a></li>
+                  <li><a class="link" href="/activities"><strong>Activities</strong></a></li>
+                  <li><a class="link" href="/guidance"><strong> Guidance</strong></a></li>
+                  <li><a class="link" href=""><strong> Home</strong></a></li>
+                </ul>
+            </div>
+            <div class="inter-title">
+                <img src=".\assets\interstellar.png" class="logo" alt="Interstellar" style="width:600px; height:550px;">
+            </div>
+    </div>
+
+    <div class="item2" id="menu"></div>
+    
+    <div class="item3" id="left-card">
+        <div class="flip-card" (click)="flipCardLocations()">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src=".\assets\locations.png" alt="guidence" style="width:280px; height:280px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Locations</h1> 
+                    <p>From the moon to mars and more. </p> 
+                    <p>Our locations span the galaxy.</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="item4" id="right-card">
+        <div class="flip-card" (click)="flipCardGuidance()">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src=".\assets\guidance.png" alt="guidence" style="width:280px; height:280px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Guidance</h1> 
+                    <p>Our team has world universe-class professionals keeping you safe and relaxed.</p> 
+                    <p>Let us worry about the complicated stuff</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item5" id="middle-card">
+        <div class="flip-card" (click)="flipCardActivities()">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src=".\assets\activities.png" alt="activities" style="width:280px; height:280px;">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Activities</h1> 
+                    <p>Antigravity space training, wingwalking on a rocket, meditaion on mars</p> 
+                    <p>The options are to infinity and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item6" id="footer">
+        <div class="navbar">
+            <button>
+                <a class="link" href="">Home</a>
+            </button>
+            <button>
+                <a class="link" href="/about">About</a>
+            </button>
+            <button>
+                <a class="link" href="/locations">Locations</a>
+            </button>
+            <button>
+                <a class="link" href="/activities">Activities</a>
+            </button>
+            <button>
+                <a class="link" href="/guidance">Guidance</a>
+            </button>
+		</div>
+    </div>
+  </div>
+  
