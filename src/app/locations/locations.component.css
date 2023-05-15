@@ -3,12 +3,35 @@
     margin: 5%;
   
   }
-  .title-locations {
+.title-locations {
     padding-top: 5%;
     font-size: 40px;
 }
-  .subheader {
+.subheader {
     font-size: 25px;
-    font-style: italic;
+    color:#c5e2de;
+}
+.inner-planets, .outer-planets {
+  position: relative;
+  display: inline-block;
+}
 
+.inner-planet-dropdown, .outer-planet-dropdown {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+#inner-planets:hover .inner-planet-dropdown, #outer-planets:hover .outer-planet-dropdown {
+  display: block;
+}
+.desc {
+  padding: 12px;
+  text-align: center;
+  color:white;
+  background-color: black;
+  margin-bottom: 80px;
 }

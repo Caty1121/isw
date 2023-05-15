@@ -18,12 +18,14 @@ ul {
   li a {
     display: block;
     color: rgb(164, 10, 184);
+    font-size: 20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: 950px;
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #fae29a;
   }  
  
